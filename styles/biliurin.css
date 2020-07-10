@@ -1,0 +1,800 @@
+@font-face {
+  font-family: 'Uni Neue';
+  src: url("../assets/fonts/UniNeueHeavy.eot");
+  src: local("Uni Neue Heavy"), local("UniNeueHeavy"), url("../assets/fonts/?#iefix") format("embedded-opentype"), url("../assets/fonts/UniNeueHeavy.woff2") format("woff2"), url("../assets/fonts/UniNeueHeavy.woff") format("woff"), url("../assets/fonts/UniNeueHeavy.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Uni Neue Book';
+  src: url("../assets/fonts/UniNeueBook.eot");
+  src: local("Uni Neue Book"), local("UniNeueBook"), url("../assets/fonts/UniNeueBook.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/UniNeueBook.woff2") format("woff2"), url("../assets/fonts/UniNeueBook.woff") format("woff"), url("../assets/fonts/UniNeueBook.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Uni Neue';
+  src: url("../assets/fonts/UniNeueRegular.eot");
+  src: local("Uni Neue Regular"), local("UniNeueRegular"), url("../assets/fonts/UniNeueRegular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/UniNeueRegular.woff2") format("woff2"), url("../assets/fonts/UniNeueRegular.woff") format("woff"), url("../assets/fonts/UniNeueRegular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Uni Neue';
+  src: url("../assets/fonts/UniNeueLight.eot");
+  src: local("Uni Neue Light"), local("UniNeueLight"), url("../assets/fonts/UniNeueLight.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/UniNeueLight.woff2") format("woff2"), url("../assets/fonts/UniNeueLight.woff") format("woff"), url("../assets/fonts/UniNeueLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Uni Neue';
+  src: url("../assets/fonts/UniNeueBold.eot");
+  src: local("Uni Neue Bold"), local("UniNeueBold"), url("../assets/fonts/UniNeueBold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/UniNeueBold.woff2") format("woff2"), url("../assets/fonts/UniNeueBold.woff") format("woff"), url("../assets/fonts/UniNeueBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Uni Neue';
+  src: url("../assets/fonts/UniNeueThin.eot");
+  src: local("Uni Neue Thin"), local("UniNeueThin"), url("../assets/fonts/UniNeueThin.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/UniNeueThin.woff2") format("woff2"), url("../assets/fonts/UniNeueThin.woff") format("woff"), url("../assets/fonts/UniNeueThin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Uni Neue';
+  src: url("../assets/fonts/UniNeueBlack.eot");
+  src: local("Uni Neue Black"), local("UniNeueBlack"), url("../assets/fonts/UniNeueBlack.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/UniNeueBlack.woff2") format("woff2"), url("../assets/fonts/UniNeueBlack.woff") format("woff"), url("../assets/fonts/UniNeueBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'Uni Neue';
+  color: #000;
+}
+
+.green-text {
+  color: #269F12;
+}
+
+.btn {
+  background: #363636;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 0;
+}
+
+.container {
+  max-width: 1240px;
+}
+
+.header {
+  background-color: #E9EEF4;
+}
+
+.header .navbar {
+  padding: 0;
+  padding-top: 38px;
+  padding-left: 110px;
+  padding-right: 70px;
+}
+
+.header .navbar .navbar-brand {
+  margin-right: 80px;
+  padding-top: 0;
+}
+
+.header .navbar .navbar-nav {
+  max-width: 900px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .navbar .navbar-nav .nav-item .nav-link {
+  color: #6A6A6A;
+}
+
+.header .navbar .navbar-nav .nav-item.active .nav-link {
+  color: #94B636;
+}
+
+.header .navbar .header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .navbar .header-contacts .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 0.5px solid rgba(43, 43, 43, 0.7);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navbar .header-contacts .phone i {
+  font-size: 11px;
+  color: rgba(43, 43, 43, 0.7);
+}
+
+.header .navbar .header-contacts .contacts {
+  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .navbar .header-contacts .contacts p {
+  color: #6A6A6A;
+  font-size: 17px;
+}
+
+.header .navbar .header-contacts .apps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navbar .header-contacts .apps button {
+  border: 0;
+  outline: 0;
+  padding: 0;
+}
+
+.header .navbar .header-contacts .apps button:first-child {
+  margin-right: 10px;
+}
+
+.header .navbar .header-contacts .apps button i {
+  font-size: 20px;
+}
+
+.header .navbar .header-contacts .apps button i.fa-whatsapp {
+  color: #269F12;
+}
+
+.header .navbar .header-contacts .apps button i.fa-viber {
+  color: #6B3AD1;
+}
+
+.main {
+  background: -webkit-gradient(linear, left top, left bottom, from(#E9EEF4), to(rgba(216, 223, 234, 0)));
+  background: linear-gradient(180deg, #E9EEF4 0%, rgba(216, 223, 234, 0) 100%);
+  padding-top: 68px;
+  /* Dropdown Button */
+  /* The container <div> - needed to position the dropdown content */
+  /* Dropdown Content (Hidden by Default) */
+  /* Links inside the dropdown */
+  /* Change color of dropdown links on hover */
+  /* Show the dropdown menu on hover */
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+}
+
+.main .main-info {
+  padding-top: 47px;
+}
+
+.main .main-info h2 {
+  font-weight: normal;
+  font-size: 55px;
+  line-height: 74px;
+  margin-bottom: 46px;
+}
+
+.main .main-info p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 31px;
+  margin-bottom: 63px;
+}
+
+.main .main-info .main-buyout {
+  margin-bottom: 130px;
+}
+
+.main .main-info .main-buyout .btn {
+  width: 213px;
+  height: 65px;
+  background: #363636;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 0;
+}
+
+.main .main-info .main-buyout .btn-label {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .main-info .main-buyout .btn-label span {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 31px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #363636;
+  margin-left: 10px;
+}
+
+.main .main-points {
+  padding-top: 84px;
+}
+
+.main .main-points .main-point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.main .main-points .main-point .point-icon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-40%, -50%);
+          transform: translate(-40%, -50%);
+  width: 73px;
+  height: 73px;
+  background: #D2D5DB;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 4px solid #eaeff4;
+}
+
+.main .main-points .main-point .point-title {
+  border-radius: 10px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 345px;
+  height: 88px;
+}
+
+.main .main-points .main-point .point-title h5 {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.main .main-points .main-point.point-1 {
+  margin-bottom: 13px;
+}
+
+.main .main-footer {
+  margin-bottom: 90px;
+}
+
+.main .main-footer p {
+  font-size: 16px;
+  line-height: 31px;
+  color: #868686;
+}
+
+.main .main-footer-links-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-top: 1px solid #A8A8A8;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .main-footer-links-wrapper .links-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 845px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .dropbtn {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #A8A8A8;
+  border: none;
+  display: block;
+  padding-top: 20px;
+  position: relative;
+}
+
+.main .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.main .dropdown-content-wrapper {
+  position: absolute;
+  bottom: calc(100%);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 262px;
+  z-index: 1;
+  padding-bottom: 10px;
+}
+
+.main .dropdown-content {
+  display: none;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 23px 53px;
+}
+
+.main .dropdown-content a {
+  color: black;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 31px;
+  color: #868686;
+  text-decoration: none;
+  display: block;
+  width: 156px;
+}
+
+.main .dropdown-content a:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.main .dropdown-content a:hover {
+  color: #343434;
+}
+
+.main .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.main .dropdown:hover .dropbtn {
+  text-decoration: none;
+  color: #353535;
+}
+
+.main .dropdown:hover .dropbtn::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: calc(100% + 8px);
+  height: 4px;
+  background-color: #000;
+}
+
+.info {
+  padding-top: 86px;
+  padding-bottom: 153px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#f1f1f1));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f1f1f1 100%);
+}
+
+.info .info-title {
+  margin-bottom: 56px;
+}
+
+.info .info-title h2 {
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 47px;
+  text-align: center;
+  margin-bottom: 24px;
+  width: 100%;
+  text-align: center;
+}
+
+.info .info-title p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 31px;
+  text-align: center;
+}
+
+.info .info-text {
+  padding-top: 66px;
+}
+
+.info .info-text h3 {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 44px;
+  margin-bottom: 24px;
+}
+
+.info .info-text p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 31px;
+  padding-left: 37px;
+  position: relative;
+}
+
+.info .info-text p:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.info .info-text p::before {
+  content: '';
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #94B636;
+  left: 0;
+  top: 11px;
+  position: absolute;
+}
+
+.info .info-desc:not(:last-child) {
+  margin-bottom: 45px;
+}
+
+.info .info-desc h3 {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 44px;
+  margin-bottom: 22px;
+}
+
+.info .info-desc p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 31px;
+  width: 100%;
+}
+
+.quiz {
+  padding-top: 64px;
+  padding-bottom: 122px;
+}
+
+.quiz .quiz-title {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 2fr;
+      grid-template-columns: 2fr 1fr 2fr;
+}
+
+.quiz .quiz-title .right-title {
+  text-align: end;
+  font-size: 45px;
+  line-height: 61px;
+}
+
+.quiz .quiz-title .right-title span {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 38px;
+  text-align: right;
+}
+
+.quiz .quiz-title .left-title {
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 61px;
+}
+
+.quiz .quiz-title > span {
+  text-align: center;
+  padding-top: 10px;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 47px;
+}
+
+.quiz .contact-form .form-desc {
+  margin-bottom: 50px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 31px;
+}
+
+.quiz .contact-form form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 19px;
+}
+
+.quiz .contact-form form div input[type=text] {
+  width: calc(50% - 8px);
+  border: 1px solid #9C9C9C;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  height: 68px;
+}
+
+.quiz .contact-form form textarea {
+  resize: none;
+  border: 1px solid #9C9C9C;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  height: 93px;
+  padding: 16px 24px;
+  margin-bottom: 46px;
+}
+
+.quiz .contact-form form .form-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quiz .contact-form form .form-footer .btn {
+  width: 263px;
+  height: 65px;
+  margin-bottom: 14px;
+}
+
+.quiz .contact-form form .form-footer p {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: #394662;
+}
+
+.quiz .contact-form form .form-footer p span {
+  text-decoration: underline;
+}
+
+.footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(#E9EEF4), to(rgba(216, 223, 234, 0)));
+  background: linear-gradient(180deg, #E9EEF4 0%, rgba(216, 223, 234, 0) 100%);
+  padding-top: 42px;
+  padding-bottom: 53px;
+}
+
+.footer .header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .header-contacts .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 0.5px solid rgba(43, 43, 43, 0.7);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .header-contacts .phone i {
+  font-size: 11px;
+  color: rgba(43, 43, 43, 0.7);
+}
+
+.footer .header-contacts .contacts {
+  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .header-contacts .contacts p {
+  color: #6A6A6A;
+  font-size: 17px;
+}
+
+.footer .header-contacts .apps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .header-contacts .apps button {
+  border: 0;
+  outline: 0;
+  padding: 0;
+}
+
+.footer .header-contacts .apps button:first-child {
+  margin-right: 10px;
+}
+
+.footer .header-contacts .apps button i {
+  font-size: 20px;
+}
+
+.footer .header-contacts .apps button i.fa-whatsapp {
+  color: #269F12;
+}
+
+.footer .header-contacts .apps button i.fa-viber {
+  color: #6B3AD1;
+}
+
+.footer .header-contacts.phone-contacts {
+  margin-bottom: 21px;
+}
+
+.footer .header-contacts.mail-contacts {
+  margin-bottom: 30px;
+}
+
+.footer .header-contacts.mail-contacts .contacts {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footer-info > p {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: #363636;
+}
+
+.footer .copyright {
+  margin-bottom: 15px;
+}
+
+.footer .footer-logo-wrapper {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer-logo-wrapper .footer-btn {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 1px solid #269F12;
+  background-color: #fff;
+  color: #269F12;
+  outline: 0;
+}
+/*# sourceMappingURL=biliurin.css.map */

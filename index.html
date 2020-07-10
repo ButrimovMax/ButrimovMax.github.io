@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/index.css">
+    
+    <script src="https://kit.fontawesome.com/29cfc314c6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Продукция</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">УЗИ до и после</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Цены</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Оплата и доставка</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Статьи</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Заказать</a>
+                    </li>
+                </ul>
+                <div class="header-contacts">
+                    <div class="phone"><i class="fas fa-phone-alt"></i></div>
+                    <div class="contacts">
+                        <p>+38(044) 466-45-46</p>
+                        <p>+38(067) 506-64-61</p>
+                    </div>
+                    <div class="apps">
+                        <button><i class="fab fa-whatsapp"></i></button>
+                        <button><i class="fab fa-viber"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="main">
+            <div class="container">
+                <div class="row main-slider">
+                    <div class="col-lg-6 ">
+                        <div class="row">
+                            <h1 class="main-title">Билиурин</h1>
+                            <p class="main-desc">
+                                Украинскими профессорами в борьбе с мочекаменным заболеванием разработан уникальный
+                                препарат Билиурин, аналогов которому на сегодняшний день нет!
+                            </p>
+                            <div class="main-specs">
+                                <div>
+                                    <h3>Капсула</h3>
+                                    <p>Форма выпуска</p>
+                                </div>
+                                <div>
+                                    <h3>100</h3>
+                                    <p>Количество капсул</p>
+                                </div>
+                                <div>
+                                    <h3>Не выявлены</h3>
+                                    <p>Побочные эффекты</p>
+                                </div>
+                            </div>
+                            <div class="main-buyout">
+                                <button class="btn" data-toggle="modal" data-target="#contactWithUs">Купить</button>
+                                <div class="btn-label">
+                                    <i class="far fa-question-circle"></i>
+                                    <span>О продукте</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row main-img-wrapper">
+                            <div class="main-mockup"><img src="./assets/img/main-img-1.png" alt=""></div>
+                            <div class="controls">
+                                <div class="arrow-left" onclick="switchMain()"></div><div class='line'></div><div class="arrow-right" onclick="switchMain()"></div>
+                            </div>
+                            <div class="preview-mockup">
+                                <h5>Билирум</h5>
+                                <div>
+                                    <img src="./assets/img/main-preview-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main-slider hide">
+                    <div class="col-lg-6 ">
+                        <div class="row">
+                            <h1 class="main-title">Билирум</h1>
+                            <p class="main-desc">
+                                Украинскими профессорами в борьбе с мочекаменным заболеванием разработан уникальный
+                                препарат Билиурин, аналогов которому на сегодняшний день нет!
+                            </p>
+                            <div class="main-specs">
+                                <div>
+                                    <h3>Капсула</h3>
+                                    <p>Форма выпуска</p>
+                                </div>
+                                <div>
+                                    <h3>100</h3>
+                                    <p>Количество капсул</p>
+                                </div>
+                                <div>
+                                    <h3>Не выявлены</h3>
+                                    <p>Побочные эффекты</p>
+                                </div>
+                            </div>
+                            <div class="main-buyout">
+                                <button class="btn" data-toggle="modal" data-target="#contactWithUs">Купить</button>
+                                <div class="btn-label">
+                                    <i class="far fa-question-circle"></i>
+                                    <span>О продукте</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row main-img-wrapper">
+                            <div class="main-mockup"><img src="./assets/img/main-img-1.png" alt=""></div>
+                            <div class="controls">
+                                <div class="arrow-left" onclick="switchMain()"></div><div class='line'></div><div class="arrow-right" onclick="switchMain()"></div>
+                            </div>
+                            <div class="preview-mockup">
+                                <h5>Билирум</h5>
+                                <div>
+                                    <img src="./assets/img/main-preview-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer-links-wrapper">
+                <div class="links-block">
+                    <div class="main-footer-links dropdown">
+                        <a href="#" class="dropbtn">Как заказать курсы</a>
+                    </div>
+                    <div class="main-footer-links dropdown">
+                        <a href="#" class="dropbtn">Наша продукция</a>
+                        <div class="dropdown-content-wrapper">
+                            <div class="dropdown-content">
+                                <a href="#">Билирум</a>
+                                <a href="#">Билиурин</a>
+                                <a href="#">УЗИ до и после</a>
+                                <a href="#">Цены</a>
+                                <a href="#">Оплата и доставка</a>
+                                <a href="#">Заказать</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="main-footer-links dropdown">
+                        <a href="#" class="dropbtn">Оплата и доставка</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-bg main-bg-left"><img src="./assets/img/main-bg-1.png" alt=""></div>
+            <div class="main-bg main-bg-right"><img src="./assets/img/main-bg-2.png" alt=""></div>
+        </section>
+        <section class="info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 info-img">
+                        <div class="info-img-wrapper">
+                            <img src="./assets/img/info-img.png" alt="">
+                        </div>
+                        <div class="info-img-card-wrapper">
+                            <div class="info-img-card">
+                                <div>
+                                    <img src="./assets/img/info-card-img.jpg" alt="">
+                                </div>
+                                <div class="info-img-card-text">
+                                    <h5>Билирум</h5>
+                                    <p>Его действие направлено на восстановление химического состава желчи и работы
+                                        печени в целом</p>
+                                </div>
+                            </div>
+                            <div class="info-img-card-circle circle-1">
+                                <div class="circle-2">
+                                    <div class="circle-3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-img-bg">
+                            <img src="./assets/img/test2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 info-text">
+                        <div class="row">
+                            <h2><span class="green-text">Безболезненное растворение</span> камней в почках и желчном
+                                пузыре</h2>
+                            <h3>с помощью препаратов Билиурин и Билирум</h3>
+                            <p>Желчнокаменная болезнь и мочекаменная болезнь, эти два тяжелых заболевания идут рука
+                                об
+                                руку, потому, как в большинстве случаев связывает их одно – нарушение обмена веществ
+                                в
+                                организме. Который могут спровоцировать малоподвижный образ жизни, нерациональное и
+                                неполноценное питание, пережитые стрессы и психологические нагрузки, связанные с
+                                нарушением режима отдыха и сна, перенесенные инфекционные заболевания.</p>
+                            <button class="btn info-btn">Узнать больше</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="choose-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 choose-us-text">
+                        <div class="row">
+                            <h2>Почему<br><span class="green-text">выбирают нас</span></h2>
+                            <p class="choose-us-text-desc">Препарат оказывает антисептическое, гепатопротекторное действие, а также проявляет
+                                адаптогенные и антиоксидантные свойства. Способствует регуляции обмена веществ и
+                                коррегирует работу имунной системы.</p>
+                            <p class="choose-us-text-info">Посмотрите как Билирум и Билиурин действует на Ваш организм</p>
+                            <div class="choose-us-credits">
+                                <img src="./assets/img/choose-us-logo.jpg" alt="">
+                                <div class="d-flex">
+                                    <div class="d-flex flex-column justify-content-between"><span class="choose-us-credits-count">30</span><span class="choose-us-credits-year">Лет</span></div>
+                                    <div class="d-flex flex-column justify-content-between"><span class="choose-us-credits-plus">+</span><span class="choose-us-credits-farm">на рынке фармацевтики</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose-us-img">
+                        <img src="./assets/img/test.jpg" alt="">
+                        <div class="img-point point-1">
+                            <div>
+                                <img src="./assets/img/img-points-1.jpg" alt="">
+                                <h5>Нормализует работу печени</h5>
+                            </div>
+                            <button class="points-btn">+</button>
+                        </div>
+                        <div class="img-point point-2">
+                            <div>
+                                <img src="./assets/img/img-points-1.jpg" alt="">
+                                <h5>Нормализует работу печени</h5>
+                            </div>
+                            <button class="points-btn">+</button>
+                        </div>
+                        <div class="img-point point-3">
+                            <div>
+                                <img src="./assets/img/img-points-1.jpg" alt="">
+                                <h5>Нормализует работу печени</h5>
+                            </div>
+                            <button class="points-btn">+</button>
+                        </div>
+                        <div class="img-point point-4">
+                            <div>
+                                <img src="./assets/img/img-points-1.jpg" alt="">
+                                <h5>Нормализует работу печени</h5>
+                            </div>
+                            <button class="points-btn">+</button>
+                        </div>
+                        <div class="img-point point-5">
+                            <div>
+                                <img src="./assets/img/img-points-1.jpg" alt="">
+                                <h5>Нормализует работу печени</h5>
+                            </div>
+                            <button class="points-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="choose-us-bg"></div>
+        </section>
+        <section class="certificates">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <h2>Сертификаты</h2>
+                            <div class="certificates-img">
+                                <img src="./assets/img/certificate-1.jpg" alt="">
+                                <img src="./assets/img/certificate-2.jpg" alt="">
+                                <img src="./assets/img/certificate-3.jpg" alt="">
+                                <img src="./assets/img/certificate-4.jpg" alt="">
+                                <img src="./assets/img/certificate-5.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact-img">
+                <img src="./assets/img/form-img.png" alt="">
+                    <a href="#" class="contact-img-link link-1">
+                        <img src="./assets/img/info-card-link-img-1.png" alt="">
+                        <div>
+                            <h5>Билирум</h5>
+                            <p>Узнайте больше о препарате и его свойствах</p>
+                        </div>
+                    </a>
+                    <a href="#" class="contact-img-link link-2">
+                        <img src="./assets/img/info-card-link-img-2.png" alt="">
+                        <div>
+                            <h5>Билиурин</h5>
+                            <p>Узнайте больше о препарате и его свойствах</p>
+                        </div>
+                    </a>
+            </div>
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-6 offset-lg-6 contact-form">
+                        <div class="row  justify-content-end">
+                            <div>
+                                <h2>Заинтересовались?<br>
+                                    <span class="green-text">Напишите нам</span></h2>
+                                <form>
+                                    <div>
+                                        <input class="form-control" type="text" placeholder="Имя">
+                                        <input class="form-control" type="text" placeholder="e-mail">
+                                    </div>
+                                    <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+                                    <div class="form-footer">
+                                        <button class="btn">Получить ответ</button>
+                                        <p>Нажимая на кнопку, Вы даете согласие на <span>обработку персональных данных</span></p>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="footer-info">
+                    <div class="header-contacts phone-contacts">
+                        <div class="phone"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contacts">
+                            <p>+38(044) 466-45-46</p>
+                            <p>+38(067) 506-64-61</p>
+                        </div>
+                        <div class="apps">
+                            <button><i class="fab fa-whatsapp"></i></button>
+                            <button><i class="fab fa-viber"></i></button>
+                        </div>
+                    </div>
+                    <div class="header-contacts mail-contacts">
+                        <div class="phone"><i class="fas fa-envelope"></i></div>
+                        <div class="contacts">
+                            <p>voronin.amed@gmail.com</p>
+                        </div>
+                    </div>
+                    <p class="copyright">Copyright © 2010 - 2020</p>
+                    <p>Политика конфиденциальности</p>
+                </div>
+                <div class="footer-logo-wrapper">
+                    <button class="footer-btn" onclick="scrollToTop()"><i class="fas fa-angle-up"></i></button>
+                    <img src="./assets/img/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- MODALS -->
+    <div class="modal fade" id="contactWithUs" tabindex="-1" role="dialog" aria-labelledby="contactWithUsLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactWithUsLabel">Напишите нам</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <input type="text" class="form-control" placeholder="Имя">
+                        <input type="text" class="form-control" placeholder="e-mail">
+                        <textarea class="form-control" name="" id="" cols="30" rows="10"
+                            placeholder="Сообщение"></textarea>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn modal-btn" data-toggle="modal" data-target="#feedback"
+                        data-dismiss="modal">Получить ответ</button>
+                    <p class="modal-footer-label">Нажимая на кнопку, Вы даете согласие на <span>обработку персональных
+                            данных</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="feedbackLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="feedback-wrapper">
+                        <span><i class="fas fa-check"></i></span>
+                        <p>Спасибо, Ваша заявка принята
+                            Мы Вам перезвоним в течении 10 минут</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script defer src="./js/main.js"></script>
+</body>
+
+</html>
