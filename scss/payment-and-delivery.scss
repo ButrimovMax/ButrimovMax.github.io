@@ -1,0 +1,223 @@
+@import 'fonts.scss';
+@import 'reset.scss';
+
+body{
+    font-family: 'Uni Neue';
+    color: #000;
+}
+
+.green-text{
+    color: #269F12;
+}
+
+.btn{
+    background: #363636;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 0;
+}
+
+
+
+.header{
+    background-color: #E9EEF4;
+    .navbar{
+        padding: 0;
+        padding-top: 38px;
+        padding-left: 110px;
+        padding-right: 70px;
+        .navbar-brand{
+            margin-right: 80px;
+            padding-top: 0;
+        }
+        .navbar-nav{
+            max-width: 900px;
+            flex-grow: 1;
+            justify-content: space-between;
+            .nav-item{
+                .nav-link{
+                    color: #6A6A6A;
+                    
+                }
+                &.active{
+                    .nav-link{
+                        color: #94B636;
+                    }
+                }
+            }
+        }
+        .header-contacts{
+            display: flex;
+            .phone{
+                display: flex;
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                border: 0.5px solid rgba(43, 43, 43, 0.7);
+                justify-content: center;
+                align-items: center;
+                i{
+                    font-size: 11px;
+                    color: rgba(43, 43, 43, 0.7);;
+                }
+            }
+            .contacts{
+                margin: 0 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                p{
+                    color: #6A6A6A;
+                    font-size: 17px;
+                }
+            }
+            .apps{
+                display: flex;
+                align-items: center;
+                button{
+                    border: 0;
+                    outline: 0;
+                    padding: 0;
+                    &:first-child{
+                        margin-right: 10px;
+                    }
+                    i{
+                        font-size: 20px;
+                        &.fa-whatsapp{
+                            color: #269F12;
+                        }
+                        &.fa-viber{
+                            color: #6B3AD1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.map-title{
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 61px;
+    margin-bottom: 74px;
+}
+
+.map-wrapper{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.delivery-info{
+    margin-bottom: 87px;
+    h2{
+        font-weight: normal;
+        font-size: 45px;
+        line-height: 61px;
+        margin-bottom: 42px;
+    }
+    p{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 31px;
+    }
+    h3{
+        margin-top: 60px;
+        margin-bottom: 32px;
+    }
+}
+
+
+.footer{
+    background: linear-gradient(180deg, #E9EEF4 0%, rgba(216, 223, 234, 0) 100%);
+    padding-top: 42px;
+    padding-bottom: 53px;
+    .header-contacts{
+        display: flex;
+        .phone{
+            display: flex;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 0.5px solid rgba(43, 43, 43, 0.7);
+            justify-content: center;
+            align-items: center;
+            i{
+                font-size: 11px;
+                color: rgba(43, 43, 43, 0.7);;
+            }
+        }
+        .contacts{
+            margin: 0 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            p{
+                color: #6A6A6A;
+                font-size: 17px;
+            }
+        }
+        .apps{
+            display: flex;
+            align-items: center;
+            button{
+                border: 0;
+                outline: 0;
+                padding: 0;
+                &:first-child{
+                    margin-right: 10px;
+                }
+                i{
+                    font-size: 20px;
+                    &.fa-whatsapp{
+                        color: #269F12;
+                    }
+                    &.fa-viber{
+                        color: #6B3AD1;
+                    }
+                }
+            }
+        }
+        &.phone-contacts{
+            margin-bottom: 21px;
+        }
+        &.mail-contacts{
+            margin-bottom: 30px;
+            .contacts{
+                justify-content: center;
+            }
+        }
+    }
+    .footer-info{
+        >p{
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 18px;
+            color: #363636;
+        }
+    }
+    .copyright{
+        margin-bottom: 15px;
+    }
+    .footer-logo-wrapper{
+        align-items: flex-end;
+        .footer-btn{
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            border: 1px solid #269F12;
+            background-color: #fff;
+            color: #269F12;
+            outline: 0;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
+
