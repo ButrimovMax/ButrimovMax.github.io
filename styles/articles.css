@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Uni Neue';
+  font-family: 'Uni Neue Book';
   src: url("../assets/fonts/UniNeueHeavy.eot");
   src: local("Uni Neue Heavy"), local("UniNeueHeavy"), url("../assets/fonts/?#iefix") format("embedded-opentype"), url("../assets/fonts/UniNeueHeavy.woff2") format("woff2"), url("../assets/fonts/UniNeueHeavy.woff") format("woff"), url("../assets/fonts/UniNeueHeavy.ttf") format("truetype");
   font-weight: 800;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: 'Uni Neue';
+  font-family: 'Uni Neue Book';
   src: url("../assets/fonts/UniNeueRegular.eot");
   src: local("Uni Neue Regular"), local("UniNeueRegular"), url("../assets/fonts/UniNeueRegular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/UniNeueRegular.woff2") format("woff2"), url("../assets/fonts/UniNeueRegular.woff") format("woff"), url("../assets/fonts/UniNeueRegular.ttf") format("truetype");
   font-weight: 500;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'Uni Neue';
+  font-family: 'Uni Neue Book';
   src: url("../assets/fonts/UniNeueLight.eot");
   src: local("Uni Neue Light"), local("UniNeueLight"), url("../assets/fonts/UniNeueLight.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/UniNeueLight.woff2") format("woff2"), url("../assets/fonts/UniNeueLight.woff") format("woff"), url("../assets/fonts/UniNeueLight.ttf") format("truetype");
   font-weight: 300;
@@ -31,7 +31,7 @@
 }
 
 @font-face {
-  font-family: 'Uni Neue';
+  font-family: 'Uni Neue Book';
   src: url("../assets/fonts/UniNeueBold.eot");
   src: local("Uni Neue Bold"), local("UniNeueBold"), url("../assets/fonts/UniNeueBold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/UniNeueBold.woff2") format("woff2"), url("../assets/fonts/UniNeueBold.woff") format("woff"), url("../assets/fonts/UniNeueBold.ttf") format("truetype");
   font-weight: bold;
@@ -39,7 +39,7 @@
 }
 
 @font-face {
-  font-family: 'Uni Neue';
+  font-family: 'Uni Neue Book';
   src: url("../assets/fonts/UniNeueThin.eot");
   src: local("Uni Neue Thin"), local("UniNeueThin"), url("../assets/fonts/UniNeueThin.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/UniNeueThin.woff2") format("woff2"), url("../assets/fonts/UniNeueThin.woff") format("woff"), url("../assets/fonts/UniNeueThin.ttf") format("truetype");
   font-weight: 100;
@@ -47,7 +47,7 @@
 }
 
 @font-face {
-  font-family: 'Uni Neue';
+  font-family: 'Uni Neue Book';
   src: url("../assets/fonts/UniNeueBlack.eot");
   src: local("Uni Neue Black"), local("UniNeueBlack"), url("../assets/fonts/UniNeueBlack.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/UniNeueBlack.woff2") format("woff2"), url("../assets/fonts/UniNeueBlack.woff") format("woff"), url("../assets/fonts/UniNeueBlack.ttf") format("truetype");
   font-weight: 900;
@@ -109,7 +109,7 @@ table {
 }
 
 body {
-  font-family: 'Uni Neue';
+  font-family: 'Uni Neue Book';
   color: #000;
 }
 

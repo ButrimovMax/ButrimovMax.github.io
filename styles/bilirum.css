@@ -109,7 +109,7 @@ table {
 }
 
 body {
-  font-family: 'Uni Neue';
+  font-family: 'Uni Neue Book';
   color: #000;
 }
 
@@ -1107,8 +1107,8 @@ body {
 }
 
 .footer {
-  background: -webkit-gradient(linear, left bottom, left top, from(#e9edf4), to(#fff)), url("/assets/img/footer-img.png") no-repeat 75% 200%;
-  background: linear-gradient(to top, #e9edf4 0%, #fff 100%), url("/assets/img/footer-img.png") no-repeat 75% 200%;
+  background: url("/assets/img/footer-img.png") no-repeat 75% 200%, -webkit-gradient(linear, left bottom, left top, from(#e9edf4), to(#fff));
+  background: url("/assets/img/footer-img.png") no-repeat 75% 200%, linear-gradient(to top, #e9edf4 0%, #fff 100%);
   padding-top: 42px;
   padding-bottom: 53px;
 }
