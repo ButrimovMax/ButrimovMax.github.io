@@ -24,6 +24,10 @@ body{
     align-items: center;
     margin-top: 26px;
     margin-bottom: 42px;
+    @media screen and (max-width:576px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     a{
         font-weight: 500;
         line-height: 16px;
@@ -160,6 +164,10 @@ body{
 
 .ultrasonography{
     padding-bottom: 107px;
+    @media screen and (max-width:576px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     h2{
         margin-bottom: 35px;
         font-weight: normal;
@@ -219,6 +227,10 @@ body{
 }
 
 .cards{
+    @media screen and (max-width:576px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .card-item{
         background: #FFFFFF;
         box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.07);
@@ -229,6 +241,9 @@ body{
         @media screen and (max-width:1030px) {
             flex-wrap: wrap;
             padding: 28px 48px;
+        }
+        @media screen and (max-width:576px) {
+            padding: 20px 15px;
         }
         &:not(:last-child){
             margin-bottom: 52px;
@@ -263,6 +278,9 @@ body{
             display: flex;
             @media screen and (max-width:1030px) {
                 order: 100000;
+            }
+            @media screen and (max-width:576px) {
+                flex-direction: column;
             }
             div{
                 display: flex;

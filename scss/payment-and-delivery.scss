@@ -24,6 +24,10 @@ body{
     align-items: center;
     margin-top: 26px;
     margin-bottom: 42px;
+    @media screen and (max-width:576px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     a{
         font-weight: 500;
         line-height: 16px;
@@ -153,6 +157,13 @@ body{
                 }
             }
         }
+    }
+}
+
+.content{
+    @media screen and (max-width:576px) {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 

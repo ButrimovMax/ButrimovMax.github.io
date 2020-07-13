@@ -137,6 +137,13 @@ body {
   margin-bottom: 42px;
 }
 
+@media screen and (max-width: 576px) {
+  .custom-breadcrumb {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .custom-breadcrumb a {
   font-weight: 500;
   line-height: 16px;
@@ -336,6 +343,13 @@ body {
 
 .header .navbar .header-contacts .apps button i.fa-viber {
   color: #6B3AD1;
+}
+
+@media screen and (max-width: 576px) {
+  .content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .map-title {

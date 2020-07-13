@@ -144,7 +144,14 @@ body{
 .main{
     background: linear-gradient(180deg, #E9EEF4 0%, rgba(216, 223, 234, 0) 100%);
     padding-top: 68px;
+    @media screen and (max-width:576px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .main-img-wrapper{
+        @media screen and (max-width:576px) {
+            display: none;
+        }
         img{
             @media screen and (max-width:768px) {
                 width: 100%;
@@ -198,11 +205,20 @@ body{
     }
     .main-points{
         padding-top: 84px;
+        .main-points-wrapper{
+            justify-content: flex-end;
+            @media screen and (max-width:576px) {
+                margin-top: 40px;
+            }
+        }
         .main-point{
             display: flex;
             position: relative;
             @media screen and (max-width:768px) {
                 width: 100%;
+            }
+            @media screen and (max-width:576px) {
+                padding-left: 20px;
             }
             .point-icon{
                 position: absolute;
@@ -233,6 +249,10 @@ body{
                 @media screen and (max-width:768px) {
                     width: 100%;
                     padding-left: 50px;
+                }
+                @media screen and (max-width:576px) {
+                    justify-content: flex-start;
+                    padding-left: 70px;
                 }
                 h5{
                     font-weight: normal;
@@ -345,6 +365,11 @@ body{
                 padding-left: 30px;
                 padding-right: 30px;
             }
+            @media screen and (max-width:576px) {
+                max-width: none;
+                padding: 0;
+                text-align: center;
+            }
         }
     }
     /* Dropdown Button */
@@ -358,6 +383,9 @@ body{
         padding-top: 20px;
         position: relative;
         cursor: pointer;
+        @media screen and (max-width:400px) {
+            font-size: 14px;
+        }
       }
       
       /* The container <div> - needed to position the dropdown content */
@@ -429,6 +457,12 @@ body{
                 url('/assets/img/product-bg-2.png') no-repeat 95% 96%,
                 url('/assets/img/product-bg-3.png') no-repeat 0% 0%,
                 linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,  rgba(241, 241, 241, 1) 100%);
+    @media screen and (max-width:576px) {
+        padding-right: 15px;
+        padding-left: 15px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%,  rgba(241, 241, 241, 1) 100%);
+        padding-bottom: 60px;
+    }
     .info-title{
         margin-bottom: 56px;
         h2{
@@ -448,7 +482,11 @@ body{
         }
     }
     .info-img{
-
+        img{
+            @media screen and (max-width:576px) {
+                width: 100%;
+            }
+        }
     }
     .info-text{
         padding-top: 66px;
@@ -505,6 +543,11 @@ body{
     padding-top: 64px;
     padding-bottom: 122px;
     background: url('/assets/img/main-bg-2.png') no-repeat 0 50%;
+    @media screen and (max-width:576px) {
+        background: none;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .container{
         position: relative;
     }
@@ -650,6 +693,9 @@ body{
         }
         @media screen and (max-width:768px){
             justify-content: center;
+        }
+        @media screen and (max-width:576px){
+            margin-top: 40px;
         }
         button{
             display: flex;

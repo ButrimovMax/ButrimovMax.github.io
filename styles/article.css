@@ -137,6 +137,13 @@ body {
   margin-bottom: 42px;
 }
 
+@media screen and (max-width: 576px) {
+  .custom-breadcrumb {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .custom-breadcrumb a {
   font-weight: 500;
   line-height: 16px;
@@ -344,6 +351,13 @@ body {
   margin-left: -15px;
 }
 
+@media screen and (max-width: 576px) {
+  .article-content {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
 .article-content .article-img {
   margin-right: 60px;
   float: left;
@@ -373,6 +387,12 @@ body {
   font-size: 45px;
   line-height: 61px;
   margin-bottom: 44px;
+}
+
+@media screen and (max-width: 576px) {
+  .article-content h2 {
+    font-size: 30px;
+  }
 }
 
 .article-content p {
