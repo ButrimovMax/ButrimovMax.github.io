@@ -41,13 +41,23 @@ body{
 .header{
     background-color: #E9EEF4;
     .navbar{
-        padding: 0;
         padding-top: 38px;
+        padding-bottom: 38px;
         padding-left: 110px;
         padding-right: 70px;
+        @media screen and (max-width:1300px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
         .navbar-brand{
-            margin-right: 80px;
+            margin-right: 130px;
             padding-top: 0;
+            @media screen and (max-width:1700px) {
+                margin-right: 40px;
+            }
+            @media screen and (max-width:1060px) {
+                margin-right: 10px;
+            }
         }
         .navbar-nav{
             max-width: 900px;
@@ -56,7 +66,13 @@ body{
             .nav-item{
                 .nav-link{
                     color: #6A6A6A;
-                    
+                    @media screen and (max-width:1060px) {
+                        font-size: 14px;
+                    }
+                    @media screen and (max-width:992px) {
+                        font-size: 20px;
+                        display: inline-block;
+                    }
                 }
                 &.active{
                     .nav-link{
@@ -67,6 +83,9 @@ body{
         }
         .header-contacts{
             display: flex;
+            @media screen and (max-width:992px) {
+                margin-top: 15px;
+            }
             .phone{
                 display: flex;
                 width: 44px;
@@ -75,6 +94,14 @@ body{
                 border: 0.5px solid rgba(43, 43, 43, 0.7);
                 justify-content: center;
                 align-items: center;
+                @media screen and (max-width:1130px) {
+                    width: 30px;
+                    height: 30px;
+                }
+                @media screen and (max-width:992px) {
+                    width: 44px;
+                    height: 44px;
+                }
                 i{
                     font-size: 11px;
                     color: rgba(43, 43, 43, 0.7);;
@@ -85,9 +112,21 @@ body{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                @media screen and (max-width:1130px) {
+                    margin: 0 10px;
+                }
+                @media screen and (max-width:992px) {
+                    margin: 0 20px;
+                }
                 p{
                     color: #6A6A6A;
                     font-size: 17px;
+                    @media screen and (max-width:1130px) {
+                        font-size: 14px;
+                    }
+                    @media screen and (max-width:992px) {
+                        font-size: 17px;
+                    }
                 }
             }
             .apps{
@@ -136,7 +175,13 @@ body{
         flex-wrap: nowrap;
         margin-bottom: 60px;
         .article-img{
-
+            @media screen and (max-width:992px) {
+                min-width: 200px;
+                max-width: 200px;
+                img{
+                    width: 100%;
+                }
+            }
         }
         .article-info{
             padding-left: 40px;
@@ -154,6 +199,9 @@ body{
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    @media screen and (max-width:1200px){
+                        margin-top: 20px;
+                    }
                 }
             }
             h3{
@@ -187,9 +235,14 @@ body{
 }
 
 .footer{
-    background: linear-gradient(180deg, #E9EEF4 0%, rgba(216, 223, 234, 0) 100%);
+    background: url('/assets/img/footer-img.png') no-repeat 75% 200%,
+                linear-gradient(to top, #e9edf4 0%, #fff 100%);
     padding-top: 42px;
     padding-bottom: 53px;
+    @media screen and (max-width:576px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .header-contacts{
         display: flex;
         .phone{
@@ -259,6 +312,11 @@ body{
     }
     .footer-logo-wrapper{
         align-items: flex-end;
+        @media screen and (max-width:450px) {
+            width: 100%;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
         .footer-btn{
             width: 65px;
             height: 65px;

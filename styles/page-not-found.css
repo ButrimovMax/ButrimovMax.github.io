@@ -1,1 +1,402 @@
-/* No CSS *//*# sourceMappingURL=page-not-found.css.map */
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header {
+  background-color: #E9EEF4;
+}
+
+.header .navbar {
+  padding-top: 38px;
+  padding-bottom: 38px;
+  padding-left: 110px;
+  padding-right: 70px;
+}
+
+@media screen and (max-width: 1300px) {
+  .header .navbar {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.header .navbar .navbar-brand {
+  margin-right: 130px;
+  padding-top: 0;
+}
+
+@media screen and (max-width: 1700px) {
+  .header .navbar .navbar-brand {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .header .navbar .navbar-brand {
+    margin-right: 10px;
+  }
+}
+
+.header .navbar .navbar-nav {
+  max-width: 900px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .navbar .navbar-nav .nav-item .nav-link {
+  color: #6A6A6A;
+}
+
+@media screen and (max-width: 1060px) {
+  .header .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 20px;
+    display: inline-block;
+  }
+}
+
+.header .navbar .navbar-nav .nav-item.active .nav-link {
+  color: #94B636;
+}
+
+.header .navbar .header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 992px) {
+  .header .navbar .header-contacts {
+    margin-top: 15px;
+  }
+}
+
+.header .navbar .header-contacts .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 0.5px solid rgba(43, 43, 43, 0.7);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1130px) {
+  .header .navbar .header-contacts .phone {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header .navbar .header-contacts .phone {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.header .navbar .header-contacts .phone i {
+  font-size: 11px;
+  color: rgba(43, 43, 43, 0.7);
+}
+
+.header .navbar .header-contacts .contacts {
+  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 1130px) {
+  .header .navbar .header-contacts .contacts {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header .navbar .header-contacts .contacts {
+    margin: 0 20px;
+  }
+}
+
+.header .navbar .header-contacts .contacts p {
+  color: #6A6A6A;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 1130px) {
+  .header .navbar .header-contacts .contacts p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header .navbar .header-contacts .contacts p {
+    font-size: 17px;
+  }
+}
+
+.header .navbar .header-contacts .apps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navbar .header-contacts .apps button {
+  border: 0;
+  outline: 0;
+  padding: 0;
+}
+
+.header .navbar .header-contacts .apps button:first-child {
+  margin-right: 10px;
+}
+
+.header .navbar .header-contacts .apps button i {
+  font-size: 20px;
+}
+
+.header .navbar .header-contacts .apps button i.fa-whatsapp {
+  color: #269F12;
+}
+
+.header .navbar .header-contacts .apps button i.fa-viber {
+  color: #6B3AD1;
+}
+
+.btn {
+  background: #363636;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 0;
+}
+
+.content {
+  padding: 42px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content p {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 29px;
+  text-align: center;
+  color: #6A6A6A;
+  max-width: 670px;
+}
+
+.content .btn {
+  width: 287px;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer {
+  background: -webkit-gradient(linear, left bottom, left top, from(#e9edf4), to(#fff)), url("/assets/img/footer-img.png") no-repeat 75% 200%;
+  background: linear-gradient(to top, #e9edf4 0%, #fff 100%), url("/assets/img/footer-img.png") no-repeat 75% 200%;
+  padding-top: 42px;
+  padding-bottom: 53px;
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.footer .header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .header-contacts .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 0.5px solid rgba(43, 43, 43, 0.7);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .header-contacts .phone i {
+  font-size: 11px;
+  color: rgba(43, 43, 43, 0.7);
+}
+
+.footer .header-contacts .contacts {
+  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .header-contacts .contacts p {
+  color: #6A6A6A;
+  font-size: 17px;
+}
+
+.footer .header-contacts .apps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .header-contacts .apps button {
+  border: 0;
+  outline: 0;
+  padding: 0;
+}
+
+.footer .header-contacts .apps button:first-child {
+  margin-right: 10px;
+}
+
+.footer .header-contacts .apps button i {
+  font-size: 20px;
+}
+
+.footer .header-contacts .apps button i.fa-whatsapp {
+  color: #269F12;
+}
+
+.footer .header-contacts .apps button i.fa-viber {
+  color: #6B3AD1;
+}
+
+.footer .header-contacts.phone-contacts {
+  margin-bottom: 21px;
+}
+
+.footer .header-contacts.mail-contacts {
+  margin-bottom: 30px;
+}
+
+.footer .header-contacts.mail-contacts .contacts {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footer-info > p {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: #363636;
+}
+
+.footer .copyright {
+  margin-bottom: 15px;
+}
+
+.footer .footer-logo-wrapper {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 450px) {
+  .footer .footer-logo-wrapper {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+.footer .footer-logo-wrapper .footer-btn {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 1px solid #269F12;
+  background-color: #fff;
+  color: #269F12;
+  outline: 0;
+}
+/*# sourceMappingURL=page-not-found.css.map */

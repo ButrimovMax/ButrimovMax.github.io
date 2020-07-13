@@ -41,13 +41,23 @@ body{
 .header{
     background-color: #E9EEF4;
     .navbar{
-        padding: 0;
         padding-top: 38px;
+        padding-bottom: 38px;
         padding-left: 110px;
         padding-right: 70px;
+        @media screen and (max-width:1300px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
         .navbar-brand{
-            margin-right: 80px;
+            margin-right: 130px;
             padding-top: 0;
+            @media screen and (max-width:1700px) {
+                margin-right: 40px;
+            }
+            @media screen and (max-width:1060px) {
+                margin-right: 10px;
+            }
         }
         .navbar-nav{
             max-width: 900px;
@@ -56,7 +66,13 @@ body{
             .nav-item{
                 .nav-link{
                     color: #6A6A6A;
-                    
+                    @media screen and (max-width:1060px) {
+                        font-size: 14px;
+                    }
+                    @media screen and (max-width:992px) {
+                        font-size: 20px;
+                        display: inline-block;
+                    }
                 }
                 &.active{
                     .nav-link{
@@ -67,6 +83,9 @@ body{
         }
         .header-contacts{
             display: flex;
+            @media screen and (max-width:992px) {
+                margin-top: 15px;
+            }
             .phone{
                 display: flex;
                 width: 44px;
@@ -75,6 +94,14 @@ body{
                 border: 0.5px solid rgba(43, 43, 43, 0.7);
                 justify-content: center;
                 align-items: center;
+                @media screen and (max-width:1130px) {
+                    width: 30px;
+                    height: 30px;
+                }
+                @media screen and (max-width:992px) {
+                    width: 44px;
+                    height: 44px;
+                }
                 i{
                     font-size: 11px;
                     color: rgba(43, 43, 43, 0.7);;
@@ -85,9 +112,21 @@ body{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                @media screen and (max-width:1130px) {
+                    margin: 0 10px;
+                }
+                @media screen and (max-width:992px) {
+                    margin: 0 20px;
+                }
                 p{
                     color: #6A6A6A;
                     font-size: 17px;
+                    @media screen and (max-width:1130px) {
+                        font-size: 14px;
+                    }
+                    @media screen and (max-width:992px) {
+                        font-size: 17px;
+                    }
                 }
             }
             .apps{
@@ -181,6 +220,12 @@ body{
     }
     .price-card-wrapper{
         justify-content: space-between;
+        @media screen and (max-width:992px) { 
+            justify-content: center;
+            .price-card:not(:last-child){
+                margin-bottom: 1.5rem !important;
+            }
+        }
     }
     .price-card{
         padding: 48px 71px;
@@ -192,6 +237,10 @@ body{
         justify-content: space-between;
         width: 560px;
         height: 312px;
+        @media screen and (max-width:1200px){
+            padding: 48px 40px;
+            width: 450px;
+        }
         .price-card-header{
             h3{
                 font-weight: 500;
@@ -249,26 +298,68 @@ body{
 .quiz{
     padding-top: 64px;
     padding-bottom: 122px;
-    background: linear-gradient(249.93deg, #FFFFFF 0.37%, #E8ECF2 98.6%);
+    background: url('/assets/img/main-bg-2.png') no-repeat 0 50%,
+                linear-gradient(249.93deg, #FFFFFF 0.37%, #E8ECF2 98.6%);
+    .container{
+        position: relative;
+    }
+    .bg{
+        mix-blend-mode: multiply;
+        position: absolute;
+        top: 20%;
+        left: 35%;
+        user-select: none;
+        pointer-events: none;
+        @media screen and (max-width:1300px) {
+            display: none;
+        }
+    }
     .quiz-title{
         display: grid;
         grid-template-columns: 2fr 1fr 2fr;
+        @media screen and (max-width:768px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            margin: 0 auto; 
+            align-items: center;
+            margin-bottom: 20px;
+            .left-title, .right-title , >span{
+                text-align: center !important;
+                padding: 10px 0;
+            }
+    }
         .right-title{
             text-align: end;
             font-size: 45px;
             line-height: 61px;
-            span{
-                font-weight: 500;
-                font-size: 25px;
-                line-height: 38px;
-                text-align: right;
-                
-            }
+            @media screen and (max-width:1240px) {
+                font-size: 30px;
+                line-height: 35px;
+        }
+        span{
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 38px;
+            text-align: right;
+            @media screen and (max-width:1240px) {
+                font-size: 16px;
+        }
+            
+        }
         }
         .left-title{
             font-weight: normal;
             font-size: 45px;
             line-height: 61px;
+            @media screen and (max-width:1240px) {
+                font-size: 30px;
+                line-height: 35px;
+            }
+            span{
+                @media screen and (max-width:1240px) {
+                    font-size: 16px;
+                }
+            }
         }
         >span{
             text-align: center;
@@ -276,14 +367,26 @@ body{
             font-weight: normal;
             font-size: 35px;
             line-height: 47px;
+            @media screen and (max-width:1240px) {
+                font-size: 28px;
+                line-height: 20px;
+            }
         }
     }
     .contact-form{
+        form{
+            @media screen and (max-width:768px) {
+                width: 100%;
+            }
+        }
         .form-desc{
             margin-bottom: 50px;
             font-weight: normal;
             font-size: 16px;
             line-height: 31px;
+            @media screen and (max-width:768px) {
+                text-align: center;
+            }
         }
         form{
             div{
@@ -335,6 +438,15 @@ body{
         justify-content: flex-end;
         margin-top: 124px;
         width: 100%;
+        @media screen and (max-width:1240px){
+            justify-content: center;
+        }
+        @media screen and (max-width:992px){
+            justify-content: flex-end;
+        }
+        @media screen and (max-width:768px){
+            justify-content: center;
+        }
         button{
             display: flex;
             align-items: center;
@@ -371,9 +483,14 @@ body{
 
 
 .footer{
-    background: linear-gradient(180deg, #E9EEF4 0%, rgba(216, 223, 234, 0) 100%);
+    background: url('/assets/img/footer-img.png') no-repeat 75% 200%,
+                linear-gradient(to top, #e9edf4 0%, #fff 100%);
     padding-top: 42px;
     padding-bottom: 53px;
+    @media screen and (max-width:576px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .header-contacts{
         display: flex;
         .phone{
@@ -443,6 +560,11 @@ body{
     }
     .footer-logo-wrapper{
         align-items: flex-end;
+        @media screen and (max-width:450px) {
+            width: 100%;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+        }
         .footer-btn{
             width: 65px;
             height: 65px;
@@ -455,5 +577,82 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+}
+
+#quizModal{
+    .modal-dialog{
+        &.modal-xl{
+            max-width: 1040px;
+        }
+    }
+    .modal-body{
+        display: flex;
+        padding: 0;
+        justify-content: space-between;
+        height: 594px;
+    }
+    .modal-links-wrapper{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        a{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 28px;
+            color: #000000;
+            transition: color .3s ease;
+            z-index: 10;
+            max-width: 210px;
+            position: absolute;
+            &:hover{
+                text-decoration-line: underline;
+                color: #269F12;
+            }
+            &.bilirum-link{
+                top: 10%;
+                left: 45%;
+            }
+            &.biliurin-link{
+                top: 80%;
+                left: 70%;
+            }
+        }
+        img{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            height: 100%;
+            transform: translate(-15%, -50%);
+            z-index: 1;
+        }
+    }
+    .modal-text-wrapper{
+        width: 100%;
+        padding-top: 75px;
+        padding-right: 70px;
+        max-width: 447px;
+        h3{
+            font-weight: normal;
+            font-size: 45px;
+            line-height: 61px;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+        h5{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 38px;
+            color: #269F12;
+            margin-bottom: 43px;
+        }
+        p{
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 31px;
+            color: #000000;
+        }
     }
 }

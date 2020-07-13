@@ -169,7 +169,7 @@
                     <div class="col-lg-6">
                         <div class="row">
                             <div class="quiz-button-wrapper">
-                                <button>
+                                <button data-toggle="modal" data-target="#quizModal">
                                     <div class="hand-icon-wrapper">
                                         <i class="hand-icon"></i>
                                     </div>
@@ -178,6 +178,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="bg">
+                    <img src="/assets/img/quiz.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -214,6 +217,24 @@
         </div>
     </footer>
 
+    <div class="modal fade" id="quizModal" tabindex="-1" role="dialog" aria-labelledby="quizModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="modal-links-wrapper">
+                  <a class="bilirum-link" href="/pages/bilirum.html">Пройти тест для Билирума</a>
+                  <a class="biliurin-link" href="/pages/biliurin.html">Пройти тест для Билиурина</a>
+                  <img src="/assets/img/form-img.png" alt="">
+              </div>
+              <div class="modal-text-wrapper">
+                  <h3>Пройдите тест</h3>
+                  <h5>на сколько эффективен препарат  в Вашем случае </h5>
+                  <p>Выберите препарат для которого нужно пройти тест</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

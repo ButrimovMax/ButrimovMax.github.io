@@ -1,6 +1,7 @@
 let circleElement = document.querySelector('.info-img-card-circle')
 let cardElement = document.querySelector('.info-img-card')
 let btn = document.getElementsByClassName('points-btn')
+
 circleElement.addEventListener('click', ()=>{
     cardElement.classList.toggle('show')
 })
@@ -23,7 +24,6 @@ const scrollToTop = () => {
     }
   };
 
-  console.log(btn)
 
 for(let i = 0; i<btn.length; i++){
     btn[i].addEventListener('click', e=>e.path[1].classList.toggle('show'))
